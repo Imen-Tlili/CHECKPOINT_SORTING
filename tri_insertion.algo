@@ -1,0 +1,20 @@
+ALGORITHM TRI_INSERTION
+VAR
+
+i,j,n,v : INTEGER ; 
+Tab : ARRAY OF INTEGER [100];
+
+
+BEGIN
+
+FOR i FROM 1 TO n-1 {
+    v := Tab[ i ] ;  
+    j := i ;        
+ While (Tab[j-1] > v) DO 
+              Tab[ j ] := Tab[ j-1 ]; 
+                j:= j-1;                 
+ }
+ Tab[ j ]:= v; 
+  }
+END
+
